@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="shadow-sm  navbar navbar-expand-lg ">
+
+        <div class="container">
+            <div class="logo d-flex align-items-center justify-content-center">
+                <div class="icon  bg-info">
+                    <i class="fas fa-utensils fs-3 text-white"></i>
+                </div>
+
+                <div>
+                    <h1 class="what ">What's For Dinner</h1>
+                    <p class="inspiration mb-0">Your daily meal inspiration</p>
+                </div>
+            </div>
+
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <div class="navbar-icons d-flex align-items-center gap-3 ms-auto">
+                    <a href="#"><i class="fas fa-bookmark"></i></a>
+                    <a href="#"> <i class="fas fa-clock-rotate-left"></i></a>
+                    <a href="#"> <i class="fas fa-gear"></i></a>
+
+                    <a href="#">
+                        <img src="images/avatar-4.jpg" alt="" class="avatar img-thumbnail">
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+    <!-- ============================ -->
+    <main class="">
+        <div class="container ">
+            <div class="row  rounded-3 overflow-hidden">
+                <div class="col-md-5 px-0 ">
+                    <div class="inner position-relative  ">
+
+                        <div class="mini-div d-flex  position-absolute justify-content-center  ">
+                            <div class="text-center">
+                                <i class="mini-icon fas fa-clock"></i>
+                                <p class="prep mb-0">Prep Time</p>
+                                <p class="min fw-bold">15 min</p>
+                            </div>
+                            <div class="text-center">
+                                <i class="fire fas fa-fire-burner"></i>
+                                <p class="prep mb-0">Cook Time</p>
+                                <p class="min fw-bold">20 min</p>
+
+
+                            </div>
+
+                            <div class="text-center">
+                                <i class="users fas fa-users"></i>
+                                <p class="prep mb-0">Servings</p>
+                                <p class="min fw-bold">2 people</p>
+
+                            </div>
+
+                        </div>
+                        <div class="badge1 position-absolute d-flex align-items-center column-gap-2">
+                            <i class="star fas fa-star "></i>
+                            
+                                <span class="span-num">4.5</span>
+                                <span class="span-reviews">(189 reviews)</span>
+                            
+                        </div>
+
+                        <img class="recipe-image w-100 object-fit-cover"
+                            src="images/photo-1565557623262-b51c2513a641.avif" alt="">
+                    </div>
+                </div>
+                <div class=" col-md-7 bg-white inner2">
+                    <div class="main-content">
+                        <div class="d-flex justify-content-between align-items-center ">
+                            <div class="text d-block g-5">
+                                <div class="d-flex gap-3">
+                                    <span class="Easy rounded-5">Easy</span>
+                                    <span class="American  rounded-5">American</span>
+                                </div>
+                                <h3 class="beef mb-0">Beef Tacos</h3>
+                                <p class="Flavorful">Flavorful Mexican tacos with seasoned ground beef</p>
+                            </div>
+                            <div class="d-flex column-gap-3">
+                                <button class="book border-0 rounded-3"><i class="fas fa-bookmark"></i></button>
+                                <button class="book border-0 rounded-3"><i class="fas fa-share-nodes"></i></button>
+
+                            </div>
+                        </div>
+
+
+
+
+                        <ul id="warning" class=" d-none ">
+                            <li>
+                                <div class="check warning d-flex align-items-center gap-2">
+                                    <i
+                                        class="warning-icon fas fa-warning d-flex justify-content-center align-items-center"></i>
+                                    <div>
+                                        <p class="mb-0 Extended ">Extended Preparation Time</p>
+                                        <span class="recipe">This recipe requires more than 45 minutes to prepare. Plan
+                                            accordingly!</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+
+                        <!-- Tabs Buttons -->
+                        <div class="nav" role="tablist">
+                            <div class="d-flex align-items-center gap-5 justify-content-center mt-3 flex-wrap">
+
+                                <button class="btn1 active" id="Ingredients-tab" data-bs-toggle="tab"
+                                    data-bs-target="#Ingredients" type="button" role="tab" aria-controls="Ingredients"
+                                    aria-selected="true">
+
+                                    <i class="fas fa-list-check"></i>
+                                    <span>Ingredients</span>
+                                </button>
+
+                                <button class="btn1" id="Instructions-tab" data-bs-toggle="tab"
+                                    data-bs-target="#Instructions" type="button" role="tab" aria-controls="Instructions"
+                                    aria-selected="false">
+
+                                    <i class="fas fa-book-open"></i>
+                                    <span>Instructions</span>
+                                </button>
+
+                                <button class="btn1" id="Nutrition-tab" data-bs-toggle="tab" data-bs-target="#Nutrition"
+                                    type="button" role="tab" aria-controls="Nutrition" aria-selected="false">
+
+                                    <i class="fas fa-chart-pie"></i>
+                                    <span>Nutrition</span>
+                                </button>
+
+                                <button class="btn1" id="ChefsTips-tab" data-bs-toggle="tab" data-bs-target="#ChefsTips"
+                                    type="button" role="tab" aria-controls="ChefsTips" aria-selected="false">
+
+                                    <i class="fas fa-lightbulb"></i>
+                                    <span>Chef's Tips</span>
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                        <div class="border mt-4"></div>
+
+                        <!-- Tabs Content -->
+                        <div class="tab-content" id="recipeTabsContent">
+
+                           
+                            <div class="tab-pane fade show active" id="Ingredients" role="tabpanel"
+                                aria-labelledby="Ingredients-tab" tabindex="0">
+
+                                <div class="nums mt-4">
+                                    <ul>
+                                        <li>
+                                            <div class="d-flex align-items-center gap-2">
+                                                <i
+                                                    class="num fas fa-1 d-flex justify-content-center align-items-center"></i>
+                                                <p class="mb-0">600g chicken breast, cubed</p>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="d-flex align-items-center gap-2">
+                                                <i
+                                                    class="num fas fa-2 d-flex justify-content-center align-items-center"></i>
+                                                <p class="mb-0">1 cup plain yogurt</p>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="d-flex align-items-center gap-2">
+                                                <i
+                                                    class="num fas fa-3 d-flex justify-content-center align-items-center"></i>
+                                                <p class="mb-0">2 tablespoons tikka masala paste</p>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="d-flex align-items-center gap-2">
+                                                <i
+                                                    class="num fas fa-4 d-flex justify-content-center align-items-center"></i>
+                                                <p class="mb-0">400ml coconut cream</p>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="d-flex align-items-center gap-2">
+                                                <i
+                                                    class="num fas fa-5 d-flex justify-content-center align-items-center"></i>
+                                                <p class="mb-0">1 onion, diced</p>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="d-flex align-items-center gap-2">
+                                                <i
+                                                    class="num fas fa-6 d-flex justify-content-center align-items-center"></i>
+                                                <p class="mb-0">4 cloves garlic, minced</p>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="d-flex align-items-center gap-2">
+                                                <i
+                                                    class="num fas fa-7 d-flex justify-content-center align-items-center"></i>
+                                                <p class="mb-0">2 tablespoons ginger, grated</p>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="d-flex align-items-center gap-2">
+                                                <i
+                                                    class="num fas fa-8 d-flex justify-content-center align-items-center"></i>
+                                                <p class="mb-0">400g canned tomatoes</p>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="d-flex align-items-center gap-2">
+                                                <i
+                                                    class="num fas fa-9 d-flex justify-content-center align-items-center"></i>
+                                                <p class="mb-0">Fresh cilantro for garnish</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                            
+                            <div class="tab-pane fade" id="Instructions" role="tabpanel"
+                                aria-labelledby="Instructions-tab" tabindex="0">
+
+                                <div class=" mt-4">
+                                    <ul>
+                                        <li>
+                                            <div class="d-flex align-items-center gap-3">
+                                                <i
+                                                    class="num1 fas fa-1 d-flex justify-content-center align-items-center"></i>
+                                                <p class="mb-0">
+                                                    Marinate chicken in half the yogurt and 1 tablespoon tikka paste
+                                                    for at least 30 minutes.
+                                                </p>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="d-flex align-items-center gap-3">
+                                                <i
+                                                    class="num1 fas fa-2 d-flex justify-content-center align-items-center"></i>
+                                                <p class="mb-0">
+                                                    Heat oil in a large pan, cook marinated chicken until browned.
+                                                    Remove and set aside.
+                                                </p>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="d-flex align-items-center gap-3">
+                                                <i
+                                                    class="num1 fas fa-3 d-flex justify-content-center align-items-center"></i>
+                                                <p class="mb-0">
+                                                    In the same pan, sauté onion until soft. Add garlic and ginger,
+                                                    cook for 1 minute.
+                                                </p>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="d-flex align-items-center gap-3">
+                                                <i
+                                                    class="num1 fas fa-4 d-flex justify-content-center align-items-center"></i>
+                                                <p class="mb-0">
+                                                    Add remaining tikka paste and canned tomatoes. Simmer for 10
+                                                    minutes.
+                                                </p>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="d-flex align-items-center gap-3">
+                                                <i
+                                                    class="num1 fas fa-5 d-flex justify-content-center align-items-center"></i>
+                                                <p class="mb-0">
+                                                    Stir in coconut cream and remaining yogurt. Add chicken back to the
+                                                    pan.
+                                                </p>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="d-flex align-items-center gap-3">
+                                                <i
+                                                    class="num1 fas fa-6 d-flex justify-content-center align-items-center"></i>
+                                                <p class="mb-0">
+                                                    Simmer for 15 minutes until sauce thickens. Garnish with cilantro
+                                                    and serve with rice.
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                           
+                            <div class="tab-pane fade" id="Nutrition" role="tabpanel" aria-labelledby="Nutrition-tab"
+                                tabindex="0">
+
+                                <div class=" mt-4 bg-white">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="mb-3">
+                                                <div
+                                                    class="mini-nitiriton d-flex justify-content-between align-items-center ">
+                                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                                        <div
+                                                            class=" Calories background1 d-flex justify-content-center align-items-center">
+                                                            <i class=" fas fa-fire"></i>
+                                                        </div>
+                                                        <span>Calories</span>
+
+                                                    </div>
+                                                    <span class="kcal">450 kcal</span>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <div
+                                                    class="mini-nitiriton d-flex justify-content-between align-items-center ">
+                                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                                        <div
+                                                            class=" Calories background2 d-flex justify-content-center align-items-center">
+                                                            <i class="  fas fa-wheat-awn"></i>
+                                                        </div>
+                                                        <span>Carbohydrates</span>
+
+                                                    </div>
+                                                    <span class="kcal">24g</span>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <div
+                                                    class="mini-nitiriton d-flex justify-content-between align-items-center ">
+                                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                                        <div
+                                                            class=" Calories background3 d-flex justify-content-center align-items-center">
+                                                            <i class="  fas fa-seedling"></i>
+                                                        </div>
+                                                        <span>Fiber</span>
+
+                                                    </div>
+                                                    <span class="kcal">4g</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-6">
+
+                                            <div class="mb-3">
+                                                <div
+                                                    class="mini-nitiriton d-flex justify-content-between align-items-center ">
+                                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                                        <div
+                                                            class=" Calories background4 d-flex justify-content-center align-items-center">
+                                                            <i class="  fas fa-share-nodes"></i>
+                                                        </div>
+                                                        <span>Protein</span>
+
+                                                    </div>
+                                                    <span class="kcal">38g</span>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <div
+                                                    class="mini-nitiriton d-flex justify-content-between align-items-center ">
+                                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                                        <div
+                                                            class=" Calories background5 d-flex justify-content-center align-items-center">
+                                                            <i class="  fas fa-droplet"></i>
+                                                        </div>
+                                                        <span>Fat</span>
+
+                                                    </div>
+                                                    <span class="kcal">22g</span>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <div
+                                                    class="mini-nitiriton d-flex justify-content-between align-items-center ">
+                                                    <div class="d-flex justify-content-center align-items-center gap-3">
+                                                        <div
+                                                            class=" Calories background6 d-flex justify-content-center align-items-center">
+                                                            <i class="  fas fa-cube"></i>
+                                                        </div>
+                                                        <span>Sodium</span>
+
+                                                    </div>
+                                                    <span class="kcal">760mg</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            
+                            <div class="tab-pane fade" id="ChefsTips" role="tabpanel" aria-labelledby="ChefsTips-tab"
+                                tabindex="0">
+
+
+                                <div class=" mt-4 bg-white">
+                                    <ul>
+                                        <li>
+                                            <div class="check d-flex align-items-center gap-2">
+                                                <i
+                                                    class="num2 fas fa-check d-flex justify-content-center align-items-center"></i>
+                                                <p class="mb-0">Marinate chicken overnight for deeper flavor</p>
+                                            </div>
+                                        </li>
+
+
+                                        <li>
+                                            <div class="check d-flex align-items-center gap-2">
+                                                <i
+                                                    class="num2 fas fa-check d-flex justify-content-center align-items-center"></i>
+                                                <p class="mb-0">Use full-fat coconut cream for richest sauce</p>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="check d-flex align-items-center gap-2">
+                                                <i
+                                                    class="num2 fas fa-check d-flex justify-content-center align-items-center"></i>
+                                                <p class="mb-0">Adjust spice level by varying the tikka paste amount</p>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="check d-flex align-items-center gap-2">
+                                                <i
+                                                    class="num2 fas fa-check d-flex justify-content-center align-items-center"></i>
+                                                <p class="mb-0">Serve with naan bread and basmati rice</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="border my-4"></div>
+
+
+                        <button class="try" onclick="anotherRecipe()">
+                            <i class="fas fa-arrows-rotate"></i>
+                            <span>Try Another Recipe</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
